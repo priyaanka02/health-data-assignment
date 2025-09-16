@@ -42,17 +42,16 @@ docker exec -i health-db psql -U dev -d health < sql_scripts/rollup_30m.sql
 
 
 ## File Structure
-health-data-assignment/
-├── README.md # This file
-├── sql_scripts/
-│ ├── schema.sql # Database table creation
-│ ├── rollup_15m.sql # 15-minute aggregation query
-│ └── rollup_30m.sql # 30-minute aggregation with gaps
-├── python_scripts/
-│ └── generate_data.py # Dummy data generation script
-└── csv_exports/
-├── health_15m_last24h.csv # 15-minute aggregated data
-└── health_30m_last24h.csv # 30-minute aggregated data
+
+**Details:**
+- README.md - Setup instructions and project overview
+- schema.sql - Database table creation and indexes  
+- rollup_15m.sql - 15-minute aggregation query
+- rollup_30m.sql - 30-minute aggregation with gaps
+- seed.sql - Alternative SQL data generation approach
+- generate_data.py - Python script for realistic dummy data
+- health_15m_last24h.csv - 15-minute aggregated export (485 rows)
+- health_30m_last24h.csv - 30-minute aggregated export (245 rows)
 
 
 ## Database Schema
