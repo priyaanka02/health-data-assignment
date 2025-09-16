@@ -105,15 +105,6 @@ The `health_data` table includes typical Apple Watch metrics:
 - **Username**: dev
 - **Password**: pass
 
-## Notes
-
-This simulation demonstrates real-world data collection challenges including:
-- Intermittent device connectivity
-- Time-based usage patterns
-- Realistic physiological correlations
-- Proper gap handling for analytics
-
-
 
 
 
